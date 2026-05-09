@@ -16,6 +16,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://inletmove.ca/faq</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://inletmove.ca/movers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

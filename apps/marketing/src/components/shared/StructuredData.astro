@@ -11,8 +11,11 @@ const businessSchema = {
   name: 'Inlet Move Co.',
   url: 'https://inletmove.ca',
   description:
-    'Local moving company in Metro Vancouver, British Columbia. Same-week local moves. From $150/hr, $300 minimum.',
+    'Local moving company in Metro Vancouver, British Columbia. Same-week local moves. From $150/hr, $300 minimum. Trained, vetted, branded crew.',
   priceRange: '$$',
+  currenciesAccepted: 'CAD',
+  paymentAccepted: 'Cash, Credit Card, Debit, E-Transfer',
+  email: 'hello@inletmove.ca',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Vancouver',
@@ -32,10 +35,82 @@ const businessSchema = {
   openingHours: 'Mo-Su 08:00-20:00',
   knowsLanguage: ['en', 'zh', 'pa', 'hi'],
   sameAs: [],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Moving Services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Local Residential Move',
+          description:
+            'Two movers + cargo van for studio, 1–3 bedroom apartments and houses in Metro Vancouver.',
+        },
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '150',
+          priceCurrency: 'CAD',
+          unitText: 'per hour',
+          description: '$300 minimum (2 hours). No fuel surcharge, no stair fee, no weekend upcharge.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Senior Downsizing Move',
+          description:
+            'Careful, patient moves for seniors downsizing. Extra padding, cultural and ceremonial item handling.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Multigenerational Household Move',
+          description:
+            'Full household moves for multigenerational families. Religious and ceremonial items handled with care.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Single Item or Partial Move',
+          description:
+            'One-off delivery or partial moves — a single piece of furniture, a few boxes, or a partial load.',
+        },
+      },
+    ],
+  },
+  potentialAction: {
+    '@type': 'ReserveAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://inletmove.ca/quote',
+      actionPlatform: [
+        'http://schema.org/DesktopWebPlatform',
+        'http://schema.org/MobileWebPlatform',
+      ],
+    },
+    result: {
+      '@type': 'Reservation',
+      name: 'Moving Quote',
+    },
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Inlet Move Co.',
+  url: 'https://inletmove.ca',
 };
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 {
   extraSchema.map((schema) => (
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />

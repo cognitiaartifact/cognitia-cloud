@@ -18,9 +18,15 @@ const description = 'Quote received. We will text a precise quote within the hou
       >
         We've got it.
       </h1>
-      <p class="mb-8 font-body text-lg leading-relaxed text-charcoal">
+      <p class="mb-4 font-body text-lg leading-relaxed text-charcoal">
         A real human will text you a precise quote within the hour.
-        If you don't hear from us by then, call <a href="tel:6040000000" class="text-pacific underline-offset-4 hover:underline">(604) 000-0000</a>.
+        If you don't hear from us by then, email
+        <a href="mailto:hello@inletmove.ca" class="text-pacific underline-offset-4 hover:underline">hello@inletmove.ca</a>.
+      </p>
+      <p class="mb-8 font-body text-base text-graphite">
+        While you wait — have you started packing? Check our
+        <a href="/faq" class="text-pacific underline-offset-4 hover:underline">FAQ</a>
+        for preparation tips.
       </p>
       <a
         href="/"
@@ -30,6 +36,20 @@ const description = 'Quote received. We will text a precise quote within the hou
       </a>
     </div>
   </article>
+
+  <!--
+    GA4 conversion event placeholder — uncomment when GA4 Measurement ID is set:
+    <script>
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'quote',
+          event_label: 'quote_form_submission',
+          value: 150,
+          currency: 'CAD',
+        });
+      }
+    </script>
+  -->
 
   <Footer slot="footer" />
 </Base>

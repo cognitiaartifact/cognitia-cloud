@@ -52,6 +52,24 @@ const ogImageURL = new URL(ogImage, Astro.site ?? 'https://inletmove.ca').toStri
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
 
+    {/* GA4 — activates when PUBLIC_GA4_ID env var is set */}
+    {import.meta.env.PUBLIC_GA4_ID && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA4_ID}`}></script>
+        <script set:html={`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${import.meta.env.PUBLIC_GA4_ID}');
+        `} />
+      </>
+    )}
+
+    {/* Google Search Console verification — activates when PUBLIC_GSC_VERIFICATION env var is set */}
+    {import.meta.env.PUBLIC_GSC_VERIFICATION && (
+      <meta name="google-site-verification" content={import.meta.env.PUBLIC_GSC_VERIFICATION} />
+    )}
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

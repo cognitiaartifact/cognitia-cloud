@@ -54,8 +54,15 @@ export default function QuoteForm() {
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form).entries());
 
+    // Honeypot spam check — bots fill hidden fields
+    if (data._gotcha) {
+      setState({ kind: 'success' });
+      return;
+    }
+
+    const { _gotcha, ...cleanData } = data;
     const payload = {
-      ...data,
+      ...cleanData,
       submitted_at: new Date().toISOString(),
       referrer: typeof document !== 'undefined' ? document.referrer : '',
       landing_page: typeof window !== 'undefined' ? window.location.pathname : '',
@@ -84,8 +91,9 @@ export default function QuoteForm() {
       }
       setState({ kind: 'success', id: json.quoteId ?? json.id });
       form.reset();
+      // Redirect to /thanks for conversion tracking + clear confirmation UX
       if (typeof window !== 'undefined') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.location.href = '/thanks';
       }
     } catch (err) {
       const message =
@@ -123,6 +131,15 @@ export default function QuoteForm() {
 
   return (
     <form onSubmit={onSubmit} className="space-y-6" noValidate>
+      {/* Honeypot — hidden from humans, catches bots */}
+      <input
+        type="text"
+        name="_gotcha"
+        autoComplete="off"
+        tabIndex={-1}
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0 }}
+      />
       <div>
         <label htmlFor="size" className={labelClass}>
           What are you moving? <span className="text-ember">*</span>
@@ -185,6 +202,7 @@ export default function QuoteForm() {
             name="preferred_date"
             type="date"
             required
+            min={new Date().toISOString().split('T')[0]}
             className={inputClass}
           />
           <p className="mt-1.5 font-mono text-[0.7rem] text-mist-dim">Same-week available.</p>
@@ -250,6 +268,8 @@ export default function QuoteForm() {
             required
             inputMode="tel"
             autoComplete="tel"
+            pattern="[\d\s\-\+\(\)]{7,15}"
+            title="Enter a valid phone number (7–15 digits)"
             placeholder="604-000-0000"
             className={inputClass}
           />

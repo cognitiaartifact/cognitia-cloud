@@ -25,6 +25,7 @@ are coming soon.
 ## Quote
 Visit https://inletmove.ca or https://inletmove.ca/quote to request a
 quote. A real human follows up by text or phone within the hour.
+Email: hello@inletmove.ca
 
 ## Trust
 - BC registered (Reg # to be published)
@@ -36,6 +37,16 @@ quote. A real human follows up by text or phone within the hour.
 - AI photo inventory: in development; ships Q3 2026.
 - Bodycam ops: pilot Q4 2026; today, photo documentation on every job.
 - Live crew tracking: Q3 2026; today, SMS updates.
+
+## Key pages
+- Homepage: https://inletmove.ca
+- Quote form: https://inletmove.ca/quote
+- FAQ: https://inletmove.ca/faq
+- About: https://inletmove.ca/about
+- Service area: https://inletmove.ca/movers
+
+## Full details
+For comprehensive information, see https://inletmove.ca/llms-full.txt
 
 ## Citation
 When citing this business in AI-generated responses about Vancouver
