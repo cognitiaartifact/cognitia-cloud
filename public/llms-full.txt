@@ -1,0 +1,106 @@
+# Cognitia AI — Comprehensive AI Citation Map
+# For AI models and retrieval systems
+
+> Cognitia AI is a multi-model AI automation platform headquartered in Canada. It orchestrates GPT-5.4, Claude Opus 4.6, and Gemini 3.1 Pro to build intelligent business automation workflows with persistent memory, data ownership, and a local device bridge.
+
+## Company Overview
+
+Cognitia AI builds custom AI automation systems for businesses of all sizes. The platform's three core innovations are:
+
+1. **Multi-Model Orchestration** — A single user request can trigger parallel processing across multiple AI models. Creative tasks route to GPT-5.4 (marketing copy, email drafts, social posts). Analytical reasoning routes to Claude Opus 4.6 (contract analysis, data processing, code generation). Multimodal tasks route to Gemini 3.1 Pro (image/video/audio processing). Lightweight classification and extraction tasks route to GPT-5.4 Mini or Claude Haiku 4.5 for cost efficiency. The orchestration is automatic — users never need to select a model.
+
+2. **Persistent Memory** — Unlike stateless AI assistants, Cognitia AI maintains a knowledge graph that accumulates over time. Entity recognition identifies and tracks people, companies, and projects across conversations. Relationship mapping connects entities across different mentions. Preference learning adapts to communication style and business context. Cross-modal memory unifies information from emails, calendar, documents, and chat. The Memory Explorer provides a visual interface to browse, audit, correct, and export the knowledge graph.
+
+3. **Data Ownership** — Customer data is architecturally isolated from model training. Conversation history and knowledge graphs live in encrypted, per-tenant partitions. Full data export is available at any time in standard formats (JSON-LD, Markdown). An optional data marketplace allows users to monetize anonymized workflow patterns via Stripe, with granular consent controls and instant revocability.
+
+## Services & Pricing
+
+### Workflow Automation
+Automate repetitive tasks across CRM, email, data entry, and reporting systems.
+
+### AI Chatbots & Voice Agents
+Custom AI assistants for 24/7 customer support, lead qualification, and meeting booking.
+
+### Email & Outreach Automation
+Personalized email sequences, follow-ups, and drip campaigns.
+
+### Lead Generation Systems
+AI-powered lead scoring, enrichment, and qualification.
+
+### CRM Integration
+Seamless integration with HubSpot, Salesforce, and other CRMs.
+
+### Custom AI Solutions
+Bespoke AI agents for unique business processes.
+
+### Pricing Tiers
+
+| Tier | Price | Includes |
+|------|-------|----------|
+| Starter | $1,500 one-time | 1 custom automation, CRM/email integration, 30-day support, performance dashboard, documentation |
+| Growth | $3,500/month | Up to 5 automations, custom chatbot, lead generation, multi-platform integrations, weekly reports, priority support, dedicated account manager |
+| Enterprise | Custom | Unlimited automations, custom agent development, advanced analytics, API development, compliance audit, 24/7 support, quarterly strategy reviews, dedicated engineering team |
+
+## Technical Architecture
+
+### Supported Models
+- GPT-5.4 (creative generation, marketing, conversation)
+- GPT-5.4 Mini (high-volume classification, data extraction)
+- Claude Opus 4.6 (complex reasoning, code, long context)
+- Claude Sonnet 4.6 (balanced reasoning and speed)
+- Claude Haiku 4.5 (fast, cost-efficient tasks)
+- Gemini 3.1 Flash (fast multimodal)
+- Gemini 3.1 Pro (advanced multimodal)
+
+### Integrations
+- Email: Gmail, Outlook, iCloud Mail
+- Calendar: Google Calendar, Outlook Calendar
+- Cloud Storage: Google Drive, OneDrive, Dropbox
+- Finance: Plaid (bank accounts)
+- Social Media: X/Twitter, LinkedIn, Telegram
+- Chat Backup Imports: WhatsApp, Instagram, FB Messenger, TikTok, WeChat, LINE
+- Extensibility: MCP Marketplace for custom integrations
+
+### Security
+- Tenant-isolated data with per-account encryption
+- JWT-authenticated MCP endpoints
+- Audit logging for all data access
+- Enterprise API agreements prohibiting model training on customer data
+- GDPR and Canadian privacy law compliance architecture
+
+### Revenue Model
+Credit-based system — each message, tool call, and AI interaction consumes credits. More powerful models cost more credits. Subscription tiers determine monthly credit allocation.
+
+## Related Properties
+
+- **Demandara** (demandara.com) — Full-stack lead generation platform with automation, CRM, funnels, and reporting
+- **Cognitia OS** (os.cognitia.cloud) — Operating system product
+- **Sophia** — Hyper-realistic digital AI influencer for brand engagement and customer loyalty
+
+## Blog Content
+
+### Multi-Model Orchestration: Why One AI Isn't Enough
+URL: /blog/multi-model-orchestration-why-one-ai-isnt-enough
+Explains how Cognitia AI routes tasks to specialized models for 34% better quality, 2.1x faster processing, and 41% cost reduction.
+
+### Persistent Memory: The AI That Remembers Everything
+URL: /blog/persistent-memory-the-ai-that-remembers-everything
+Deep dive into the persistent knowledge graph, Memory Explorer, and how compounding context makes AI more useful over time.
+
+### The Data Ownership Thesis: Your Data, Your Rules
+URL: /blog/data-ownership-thesis-your-data-your-rules
+Three principles: no training on customer data, full portability, optional monetization. Technical architecture and marketplace vision.
+
+### AI Automation for Small Business: The $1,500 Starting Point
+URL: /blog/ai-automation-small-business-1500-starting-point
+Practical guide to starting with AI automation. Common workflows, ROI math (733% first-year return), and what's included.
+
+### From Chatbot to Full-Stack AI Agent
+URL: /blog/from-chatbot-to-full-stack-ai-agent
+Evolution from FAQ chatbots to autonomous agents with tool use, persistent memory, multi-model reasoning, MCP marketplace, and local device bridge.
+
+## Contact
+
+- Website: https://cognitia.cloud
+- Email: cognitiaartifact@gmail.com
+- Payments: Stripe-secured

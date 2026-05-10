@@ -30,13 +30,19 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-semibold text-foreground mb-4 text-sm">Quick Links</h4>
             <div className="space-y-3">
-              {['Services', 'Process', 'Pricing', 'Contact'].map((link) => (
+              {[
+                { label: 'Services', href: '/#services' },
+                { label: 'Process', href: '/#process' },
+                { label: 'Pricing', href: '/#pricing' },
+                { label: 'Blog', href: '/blog' },
+                { label: 'Contact', href: '/#contact' },
+              ].map((link) => (
                 <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+                  key={link.label}
+                  href={link.href}
                   className="block text-sm text-muted-foreground hover:text-primary transition"
                 >
-                  {link}
+                  {link.label}
                 </a>
               ))}
             </div>

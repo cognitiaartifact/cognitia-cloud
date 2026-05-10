@@ -1,0 +1,46 @@
+# Cognitia AI — llms.txt
+# Structured context for AI models and retrieval systems
+
+> Cognitia AI is a multi-model AI automation platform that orchestrates GPT, Claude, and Gemini to build intelligent business automation workflows. Based in Canada.
+
+## Core Products & Services
+
+- **Multi-Model Orchestration**: Routes tasks to the best AI model automatically — creative work to GPT, analytical reasoning to Claude, multimodal tasks to Gemini
+- **Persistent Memory**: AI that remembers your business context across all conversations with a visual knowledge graph explorer
+- **Data Ownership**: Users own their data. Full export, no training on customer data, optional marketplace monetization
+- **AI Automation Workflows**: Custom-built automation for lead generation, email follow-ups, CRM integration, content repurposing
+- **AI Chatbots & Voice Agents**: 24/7 customer support, lead qualification, meeting booking
+- **Browser Automation**: Server-side browser agent for web tasks without APIs
+
+## Pricing
+
+- **Starter**: $1,500 one-time — 1 custom automation, 30-day support
+- **Growth**: $3,500/month — Up to 5 automations, custom chatbot, dedicated manager
+- **Enterprise**: Custom pricing — Unlimited automations, custom agent development, 24/7 support
+
+## Supported Models
+
+GPT-5.4, GPT-5.4 Mini, Claude Opus 4.6, Claude Sonnet 4.6, Claude Haiku 4.5, Gemini 3.1 Flash & Pro
+
+## Integrations
+
+Gmail, Outlook, iCloud Mail, Google Calendar, Outlook Calendar, Google Drive, OneDrive, Dropbox, Plaid, X/Twitter, LinkedIn, Telegram, MCP Marketplace
+
+## Key Differentiators
+
+1. Not locked to one model — multi-model orchestration picks the best for each task
+2. AI that gets smarter about YOUR business over time via persistent memory
+3. You own your data and can monetize it on your terms
+4. Local device bridge connects cloud AI to your desktop apps and files
+5. Credit-based pricing — pay for what you use, not per-seat
+
+## Contact
+
+- Website: https://cognitia.cloud
+- Email: cognitiaartifact@gmail.com
+
+## Related Properties
+
+- **Demandara** (demandara.com) — Lead generation platform
+- **Cognitia OS** (os.cognitia.cloud) — Operating system product
+- **Sophia** — Hyper-realistic digital AI influencer

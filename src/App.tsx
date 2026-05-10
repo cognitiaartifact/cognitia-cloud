@@ -3,6 +3,8 @@ import { Toaster } from 'sonner'
 import Home from './pages/Home'
 import PaymentSuccess from './pages/PaymentSuccess'
 import PaymentCancel from './pages/PaymentCancel'
+import BlogIndex from './pages/blog/BlogIndex'
+import BlogPost from './pages/blog/BlogPost'
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
       />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path="/payment-cancel" element={<PaymentCancel />} />
       </Routes>
