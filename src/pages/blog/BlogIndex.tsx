@@ -4,7 +4,7 @@ import { ArrowRight, Calendar, Clock, Tag } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { getAllPosts } from '@/content/blog-posts'
-import { BlogJsonLd, BlogListingJsonLd } from '@/components/BlogSEO'
+import { BlogListingJsonLd } from '@/components/BlogSEO'
 
 export default function BlogIndex() {
   const posts = getAllPosts()
