@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Clock, Send, MessageSquare } from 'lucide-react'
 import { toast } from 'sonner'
+import { trackLead } from '@/lib/analytics'
 
 const contactInfo = [
   { icon: Mail, label: 'Email', value: 'hello@cognitia.cloud', href: 'mailto:hello@cognitia.cloud' },
@@ -26,6 +27,7 @@ export default function ContactSection() {
       const data = await res.json()
       if (data.success) {
         toast.success("Message sent! We'll get back to you within 24 hours.")
+        trackLead('contact_form')
         setFormData({ name: '', email: '', company: '', message: '' })
       } else {
         throw new Error(data.error || 'Something went wrong')
