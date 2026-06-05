@@ -6,10 +6,12 @@ import PaymentCancel from './pages/PaymentCancel'
 import NotFound from './pages/NotFound'
 import BlogIndex from './pages/blog/BlogIndex'
 import BlogPost from './pages/blog/BlogPost'
+import { RouteTracker } from './components/RouteTracker'
 
 export default function App() {
   return (
     <BrowserRouter>
+      <RouteTracker />
       <Toaster
         position="top-right"
         toastOptions={{
